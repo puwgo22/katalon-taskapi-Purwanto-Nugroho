@@ -28,3 +28,25 @@ TC - Get_BookingID
 TC - Update_BookingID
 TC - Delete_BookingID
 ```
+
+# End Point
+The overall endpoints on [herokuapp](restful-booker.herokuapp.com).
+Several global variables will make creating an object repository for the project easier. As below:
+```
+{
+    "baseURL": "https://restful-booker.herokuapp.com"
+    "username_admin": "admin"
+    "password_admin": "password123"
+    "token_awal": "0678fd393952fe3"
+    "id": "1764"
+}
+```
+
+
+**POST Create Token**
+
+To be able to book, you need a token, and the way to do it is to create a token first which in [herokuapp](restful-booker.herokuapp.com) provided a response code 200 OK.
+```
+${GlobalVariable.baseURL}/auth
+```
+
